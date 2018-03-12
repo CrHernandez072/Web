@@ -39,4 +39,8 @@ urlpatterns = [
 
 #-------- FIN 6 DE MARZO---------
 
+
+#7 MARZO  PROCESADORES DE CONTEXTO
+    path("procesador_contexto/", views.procesador_contexto),    
+#-------- FIN 7 DE MARZO---------
 ]
