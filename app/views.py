@@ -61,21 +61,3 @@ def consumir_extendido(request):
 #mas rapido las etiqueta que se utilizan en el procesador de contexto
 def procesador_contexto(request):
   return render(request, 'app/procesador_contexto.html')
-
-from .models import Autor
-import django
-import sys
-
-def nombre_proceso(request):
-  get_version_django = django.get_version()
-  get_version_python = sys.version
-
-  p = Autor.objects.all()
-  diccionario = {"python_version": get_version_python, "django_version": get_version_django, "valores_autor": p}
-
-  #Tambien se puede  mandar formularios
-  #formulario = nombre_formulario()
-  #diccionario = {"python_version": get_version_python, "django_version": get_version_django, "estatus":p, "formulario": formulario}
-  return diccionario
-
-  #-------------------- FIN DE 7 MARZO ---------------------------
