@@ -37,5 +37,6 @@ urlpatterns = [
     path("consumir_libro/", views.consumir_libro),
     path("consumir_extendido/", views.consumir_extendido),
 
-#-------- FIN 6 DE MARZO---------
+#-------- INCLUSION TAGS---------
+    path("inclusion/", views.vista_inclusion),
 ]

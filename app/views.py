@@ -55,3 +55,5 @@ def consumir_libro(request):
 def consumir_extendido(request):
    return render(request, 'app/consum_json_extendido.html')
 
+def vista_inclusion(request):
+   return render(request, 'app/inclusion.html')
