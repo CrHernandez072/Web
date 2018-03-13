@@ -37,5 +37,8 @@ urlpatterns = [
     path("consumir_libro/", views.consumir_libro),
     path("consumir_extendido/", views.consumir_extendido),
 
-#-------- FIN 6 DE MARZO---------
+#-------- URL DEL REPORTE---------
+    path('reporte/', views.reporte_vista, name = "reporte"),
+
+    #acceder a: http://localhost:8000/reporte
 ]

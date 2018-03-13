@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %} 
+
+<!--SOBRESCRIBIENDO EL BLOQUE TITLE (VIENE DEL ARCHIVO base.html)-->
+{% block title %}MI PRIMER REPORTE{%endblock%}
+
+<!--SOBRESCRIBIENDO EL BLOQUE CONTENEDOR (VIENE DEL ARCHIVO base.html)-->
+{% block contenedor %}
+	<!-- bordered centered striped es CSS -->
+	<table class="bordered centered striped">
+		<thead>
+		  <tr>
+		      <th>Nombre</th>
+		      <th>Apellido</th>
+		      <th>Correo</th>
+		  </tr>
+		</thead>
+	    <tbody>
+
+		{% for autor in autores %}
+			<tr>
+				<!-- autor.valo, proviene especifica que campo seleccionará del modelo. (Ver models.py)-->
+				<td>{{ autor.nombre }}</td>
+		        <td>{{ autor.apellido }}</td>
+		        <td>{{ autor.correo }}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+{% endblock %}

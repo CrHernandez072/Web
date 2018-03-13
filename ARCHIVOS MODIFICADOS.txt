@@ -1,0 +1,10 @@
+Para realizar éste reporte, en los archivos que se realizarón cambios, fueron los siguientes:
+	
+		views.py
+		urls.py
+
+y se creo el archivo "reporte.html":
+	templates
+		app
+			reporte.html
+

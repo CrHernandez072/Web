@@ -55,3 +55,10 @@ def consumir_libro(request):
 def consumir_extendido(request):
    return render(request, 'app/consum_json_extendido.html')
 
+#GENERAR REPORTE
+#1. importar el modelo
+from .models import Autor
+
+#2. Crear ĺa vista del reporte
+def reporte_vista(request):
+  return render(request, 'app/reporte.html', {'autores': Autor.objects.all()})  
