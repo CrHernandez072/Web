@@ -1,14 +1,8 @@
-{% extends 'app/base.html' %} 
-{% load inclusion_tags %}
-
-{% block contenedor %}
+{% block contenido %}
 <div id="contenedor" class="container">
-	<table>
-	{% for auto in key_detalle %}
-adasdasdas
+	{% for autor in autores %}
+		<p>{{ autor.apellido }}</p>
+		<p>{{ autor.correo }}</p>
 	{% endfor %}
-	</table>
-	
-	<script>console.log("adasdas")</script>
 </div>
 {%endblock%}

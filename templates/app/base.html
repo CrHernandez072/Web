@@ -1,4 +1,6 @@
 {% load static %}
+{% load inclusion_tags %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +29,15 @@
 	<br>
 
 	<div class="grid-example col s12 m6" style="position: absolute; width: 50%; left: 25%;top: 12%; border-radius: 5px;">
-		{% block contenedor %}
-		{% endblock %}	
+		
+	{% block contenido %}
+		{% show_autores %}
+	{% endblock %}
+	
+	
+	{% block contenido1 %}
+	
+	{% endblock %}
 	</div>
 	<script src="{% static 'app/jquery-3.2.1.min.js' %}"></script>
   	<script src="{% static 'app/materialize/js/materialize.min.js' %}"></script>

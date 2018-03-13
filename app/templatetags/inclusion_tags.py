@@ -1,9 +1,9 @@
 from django import template
-from app import models
+from app.models import Autor
 
 register = template.Library()
 @register.inclusion_tag('app/inclusion.html')
 
 def show_autores():
-	detalle = models.detalle_libros.objects.all()
-	return {'key_detalle': "detalle"}
+	p = Autor.objects.all()
+	return {'autores': p}
