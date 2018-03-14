@@ -1,8 +1,4 @@
-{% block contenido %}
-<div id="contenedor" class="container">
-	{% for autor in autores %}
-		<p>{{ autor.apellido }}</p>
-		<p>{{ autor.correo }}</p>
-	{% endfor %}
-</div>
-{%endblock%}
+{% for autor in autores %}
+	<p>{{ autor.apellido }}</p>
+	<p>{{ autor.correo }}</p>
+{% endfor %}

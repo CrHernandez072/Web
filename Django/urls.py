@@ -36,7 +36,4 @@ urlpatterns = [
     path("consumir_editorial/", views.consumir_editorial),
     path("consumir_libro/", views.consumir_libro),
     path("consumir_extendido/", views.consumir_extendido),
-
-#-------- INCLUSION TAGS---------
-    path("inclusion/", views.vista_inclusion),
 ]

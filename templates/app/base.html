@@ -1,6 +1,4 @@
 {% load static %}
-{% load inclusion_tags %}
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +7,6 @@
 
 	{% block links %} 
 	<link rel="stylesheet" type="text/css" href="{% static 'app/fontawesome/css/fontawesome-all.css' %}" />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{% static 'app/materialize/css/materialize.min.css' %}" />
 	<script src="{% static 'app/jquery-3.2.1.min.js' %}"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,15 +25,10 @@
 	{% endblock %}
 	<br>
 
+	
 	<div class="grid-example col s12 m6" style="position: absolute; width: 50%; left: 25%;top: 12%; border-radius: 5px;">
+	{% block contenedor %}	
 		
-	{% block contenido %}
-		{% show_autores %}
-	{% endblock %}
-	
-	
-	{% block contenido1 %}
-	
 	{% endblock %}
 	</div>
 	<script src="{% static 'app/jquery-3.2.1.min.js' %}"></script>
